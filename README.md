@@ -1,5 +1,8 @@
 <a href="https://firebearstudio.com/blog/improved-import-extension-manual.html">Imporved Import - Review, Manual & Csv sample</a>
 
+<a href="https://firebearstudio.com/the-improved-import.html" title="Magento 2 Scheduled Import & Export , mapping , xml">Improved Import for Magento 2</a>
+
+<a href="https://firebearstudio.com/magento-extensions/magento2extensions" title="Magento 2 Extensions">Firebear Magento 2 Extensions</a>
 
 Improved Import extension enhance the ability of default Magento import process with adding the most requested features! All this features works with default Magento Dataflow import/export from .csv files. We provide detailed manual and .csv samples for make you life easy! This extension can be very helpful for product migration from another E-Commerce systems to Magento. This extension can be also used for update already exist products with multiple images, additional images from URL, custom options and tier prices!
 
