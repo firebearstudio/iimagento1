@@ -1,0 +1,189 @@
+<?xml version="1.0"?>
+<config>
+
+    <tabs>
+        <Firebear translate="label">
+            <label>Firebear</label>
+            <sort_order>220</sort_order>
+        </Firebear>
+    </tabs>
+
+    <sections>
+        <improvedimport translate="label" module="improvedimport">
+            <label>Improved Import</label>
+            <tab>Firebear</tab>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <sort_order>1000</sort_order>
+            <groups>
+                <general translate="label">
+                    <label>General</label>
+                    <frontend_type>text</frontend_type>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>0</show_in_store>
+                    <sort_order>1</sort_order>
+                    <fields>
+                        <enabled translate="label">
+                            <label>Enabled</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                            <comment><![CDATA[Before enable extension and start import please read carefully <b><a href="http://firebearstudio.com/blog/improved-import-extension-manual.html" target="_blank">Improved Import Extension Manual</a></b>]]></comment>
+                        </enabled>
+                    </fields>
+                </general>
+                <imagesoptions translate="label">
+                    <label>Product Images Import</label>
+                    <frontend_type>text</frontend_type>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>0</show_in_store>
+                    <sort_order>2</sort_order>
+                    <fields>
+                        <image_exclude_enabled translate="label">
+                            <label>Enable Excluded Images</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                            <comment><![CDATA[If the product image is a main product image (image, small_image, or thumbnail), automatically check the exlcude checkbox.]]></comment>
+                        </image_exclude_enabled>
+                        <image_sku_enabled translate="label">
+                            <label>Show product SKU for missed images</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                            <comment><![CDATA[If product image not can be found on media/import show product SKU on error message]]></comment>
+                        </image_sku_enabled>
+                        <multiple_image_column_name translate="label">
+                            <label>Multiple Image Column Name</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                            <comment><![CDATA[The header in your CSV where you will put your additional images to import. When importing multiple images, separate with a semi-colon: 'image1.jpg;image2.jpg;image3.jpg']]></comment>
+                        </multiple_image_column_name>
+                        <multiple_image_url_column_name translate="label">
+                            <label>Multiple Image from URL Column Name</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                            <comment><![CDATA[The header in your CSV where you will put your additional images from URL to import. When importing multiple images from URL, separate with a semi-colon, put full image URL: 'http://site.com/image1.jpg;http://site.com/image2.jpg;http://site.com/image3.jpg'.]]></comment>
+                        </multiple_image_url_column_name>
+                        <main_images_url_enabled translate="label">
+                            <label>Enable images from URL for main images</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>40</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                            <comment><![CDATA[Allow images from URL for  main product images (image, small_image, or thumbnail).]]></comment>
+                        </main_images_url_enabled>
+                    </fields>
+                </imagesoptions>
+                <customoptions translate="label">
+                <label>Product Custom Options Import</label>
+                <frontend_type>text</frontend_type>
+                <show_in_default>1</show_in_default>
+                <show_in_website>1</show_in_website>
+                <show_in_store>0</show_in_store>
+                <sort_order>3</sort_order>
+                <fields>
+                    <custom_options_enabled translate="label">
+                        <label>Enable product custom options import</label>
+                        <frontend_type>select</frontend_type>
+                        <source_model>adminhtml/system_config_source_yesno</source_model>
+                        <sort_order>10</sort_order>
+                        <show_in_default>1</show_in_default>
+                        <show_in_website>1</show_in_website>
+                        <show_in_store>0</show_in_store>
+                        <comment><![CDATA[ Enable import product custom options. To import a custom option you need to add a new column to your CSV import file. The name of the column determines the name and type of the option. Custom options should be last column on CSV file!]]></comment>
+                    </custom_options_enabled>
+                </fields>
+                </customoptions>
+                <tierprices translate="label">
+                    <label>Product Tier Prices Import</label>
+                    <frontend_type>text</frontend_type>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>0</show_in_store>
+                    <sort_order>3</sort_order>
+                    <fields>
+                        <tier_prices_enabled translate="label">
+                            <label>Enable product tier prices import</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                            <comment><![CDATA[ Enable tier prices product import. You can add column to you .csv file with special prices for different customers group for each product. ]]></comment>
+                        </tier_prices_enabled>
+                    </fields>
+                </tierprices>
+                <customers translate="label">
+                    <label>Customers password import</label>
+                    <frontend_type>text</frontend_type>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>0</show_in_store>
+                    <sort_order>5</sort_order>
+                    <fields>
+                        <customers_enabled translate="label">
+                            <label>Enable customers import with unencrypted password</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                            <comment><![CDATA[ Enable customers import with unencrypted password - you just need specify column on you CSV and put there unencrypted password.]]></comment>
+                        </customers_enabled>
+                        <password_column_name translate="label">
+                            <label>Customer Unencrypted Password Column Name</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                            <comment><![CDATA[Name of column on you csv file where is customers unencrypted passwords located]]></comment>
+                        </password_column_name>
+                    </fields>
+                </customers>
+                <imagesexport>
+                    <label>Export multiple product images</label>
+                    <frontend_type>text</frontend_type>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>0</show_in_store>
+                    <sort_order>6</sort_order>
+                    <fields>
+                        <multiple_image_export_column_name translate="label">
+                            <label>Multiple Images Export Column Name</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                            <comment><![CDATA[Name of column on csv file what be added for export multiple product images separated with “;”]]></comment>
+                        </multiple_image_export_column_name>
+                    </fields>
+                </imagesexport>
+            </groups>
+        </improvedimport>
+    </sections>
+</config>
