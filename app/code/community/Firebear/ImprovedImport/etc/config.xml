@@ -25,6 +25,11 @@
                     <convert_adapter_customer>Firebear_ImprovedImport_Model_Customer_Convert_Adapter_Customer</convert_adapter_customer>
                 </rewrite>
             </customer>
+            <importexport>
+            		<rewrite>
+            			<export_entity_product>Firebear_ImprovedImport_Model_Export_Entity_Product</export_entity_product>
+           		 </rewrite>
+            </importexport>
             <dataflow>
                 <rewrite>
                     <convert_parser_csv>Firebear_ImprovedImport_Model_Export</convert_parser_csv>
@@ -36,6 +41,11 @@
                 <class>Firebear_ImprovedImport_Helper</class>
             </improvedimport>
         </helpers>
+         <importexport module="importexport">
+          <export_product_types>
+            <bundle>improvedimport/export_entity_product_type_bundle</bundle>
+          </export_product_types>
+         </importexport>
     </global>
 
     <default>
