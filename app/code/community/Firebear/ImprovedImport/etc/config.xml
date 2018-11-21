@@ -9,7 +9,11 @@
         <models>
             <improvedimport>
                 <class>Firebear_ImprovedImport_Model</class>
+				<resourceModel>improvedimport_resource</resourceModel>
             </improvedimport>
+            <improvedimport_resource>
+                <class>Firebear_ImprovedImport_Model_Resource</class>
+            </improvedimport_resource>			
             <catalog>
                 <rewrite>
                     <convert_adapter_product>Firebear_ImprovedImport_Model_Catalog_Convert_Adapter_Product</convert_adapter_product>
@@ -42,9 +46,15 @@
             </improvedimport>
         </helpers>
          <importexport module="importexport">
-          <export_product_types>
-            <bundle>improvedimport/export_entity_product_type_bundle</bundle>
-          </export_product_types>
+			<export_product_types>
+				<bundle>improvedimport/export_entity_product_type_bundle</bundle>
+			</export_product_types>
+            <export_entities>
+                <order translate="label">
+                    <model_token>improvedimport/export_entity_order</model_token>
+                    <label>Orders</label>
+                </order>
+            </export_entities>			
          </importexport>
     </global>
 
