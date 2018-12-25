@@ -4,7 +4,11 @@
 
 <a href="https://firebearstudio.com/magento-extensions/magento2extensions" title="Magento 2 Extensions">Firebear Magento 2 Extensions</a>
 
-Improved Import extension enhance the ability of default Magento import process with adding the most requested features! All this features works with default Magento Dataflow import/export from .csv files. We provide detailed manual and .csv samples for make you life easy! This extension can be very helpful for product migration from another E-Commerce systems to Magento. This extension can be also used for update already exist products with multiple images, additional images from URL, custom options and tier prices!
+Improved Import extension for Magento 1 enhances the ability of default Magento import process. It adds the most requested features! All this features works with default Magento Dataflow import/export using .csv files. We provide detailed manual and .csv samples to make you life easy! This extension can be very helpful for product migration from another E-Commerce systems to Magento. This extension can be also used to update already existing products with multiple images, additional images from URL, custom options and tier prices!
+
+# Exporting orders from Magento 1 and migrating them to Magento 2
+
+The recent update of Improved Import extension for Magento 1 introduced the order export procedure. The orders can now be exported to the .csv files in the most convenient way. When the export is complete you can use <a href="https://firebearstudio.com/the-improved-import.html" alt="Improved Import for Magento 2"><b>Improved Import and Export extension for Magento 2</b></a> to migrate orders to your Magento 2 store. No prerequisits. Just upload the file with Magento 2 extension and click 'Import' button.
 
 # Import multiple product images
 
