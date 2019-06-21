@@ -13,7 +13,7 @@ The recent update of Improved Import extension for Magento 1 introduced the orde
 # Import multiple product images
 
 
-By default you can import only tree types of product images - image, small_image and thumbnail. This is sad, because usually each product on you store can have much more images, photos etc. With Improved Import you can import as many images as you want for each product! Just create additional column on you .csv file and put image names separated by ";" (like "image1.jpg;image2.jpg;image3.jpg") - all images must be uploaded to you media/import folder on this case.
+By default you can import only three types of product images - image, small_image and thumbnail. This is sad, because usually each product on you store can have much more images, photos etc. With Improved Import you can import as many images as you want for each product! Just create additional column on you .csv file and put image names separated by ";" (like "image1.jpg;image2.jpg;image3.jpg") - all images must be uploaded to you media/import folder on this case.
 
 # Import multiple product images from external URL
 
