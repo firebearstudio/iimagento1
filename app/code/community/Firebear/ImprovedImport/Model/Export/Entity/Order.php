@@ -264,7 +264,7 @@ class Firebear_ImprovedImport_Model_Export_Entity_Order
 				foreach ($describe as $column => $info) {
 					$columnName = $this->getColumnName($prefix, $column);
 					$dataType = !empty($info['DATA_TYPE']) ? $info['DATA_TYPE'] : null;
-					if (in_array($dataType, ['blob', 'mediumblob', 'tinyblob', 'longblob'])) {
+					if (in_array($dataType, array('blob', 'mediumblob', 'tinyblob', 'longblob'))) {
 						$this->_blobAttributes[] = $columnName;
 					}					
 					$this->_columns[] = $columnName;
